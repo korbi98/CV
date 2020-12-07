@@ -1,0 +1,191 @@
+\documentclass[a4paper, ]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fontawesome}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\subsection}{0em}{.25em}{.5em}
+
+\hypersetup{
+    colorlinks=true,      
+    urlcolor=blue
+}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        \Large\thetitle\vspace{0.25cm}\\
+        {\huge\bfseries\theauthor}
+    \end{center}
+}
+
+\newenvironment{cventry}[2]
+{   
+    \setlength{\tabcolsep}{1.25em}
+    \hypersetup{urlcolor=black}
+    \begin{center}\hspace{-1.25cm}\begin{tabular}{p{0.25\linewidth}|p{0.65\linewidth}}
+    \raggedleft\scshape #1 & \bfseries#2 \vspace{0.1cm}\\ & 
+}
+{\end{tabular}\end{center}}
+
+\newenvironment{cventrynoheading}[1]
+{
+    \setlength{\tabcolsep}{1.25em}
+    \begin{center}\hspace{-1.25cm}\begin{tabular}{p{0.25\linewidth}|p{0.65\linewidth}}
+    \raggedleft\scshape #1 & 
+}
+{\end{tabular}\end{center}}
+
+\newcommand{\newentryline}{\\&}
+
+
+\begin{document}
+    
+\title{R\'esum\'e}
+\author{Korbinian Moser}
+
+\maketitle
+
+\section{Personal Info}
+
+\begin{center}
+\setlength{\tabcolsep}{0.1em}
+\small
+\begin{tabular}{p{1em}p{0.4\linewidth}cp{0.5\linewidth}}
+    \faEnvelopeO&: \href{mailto:me@example.com}{\nolinkurl{korbi@korbinian-moser.de}} & 
+    \faGithub&: \href{https://github.com/korbi98}{\nolinkurl{github.com/korbi98}} \vspace{0.25cm}\\  
+    \faGlobe&: \url{https://korbinian-moser.de} & 
+    \(\mathrm{R^G}\)&: \href{https://www.researchgate.net/profile/Korbinian_Moser}{\nolinkurl{researchgate.net/profile/Korbinian_Moser}}
+\end{tabular}
+\end{center}
+\noindent
+Currently pursuing a Masters degree in Physics at Ludwig-Maximilans-University
+Munich. My main interests lie within applied research, especially solid state physics, 
+plasma physics and (nano)photonics.
+
+\section{Experience}
+
+\begin{cventry}{11/2020 -- Present}
+    {Max Planck Institute for plasma physics}
+    Working student, working on emission tomography for bolometer 
+    measurements via Gaussian process regression
+\end{cventry}
+
+\begin{cventry}{04/2018 -- 01/2019}
+    {InTech GmbH, Garching by Munich}
+    Working student, working on train simulation in Matlab/Simulink within the 
+    \href{https://www.researchgate.net/project/TORPA-Toolbox-for-Optimal-Railway-Propulsion-Architectures}{TORPA} 
+    project for estimating efficiency of different propulsion architectures 
+\end{cventry}
+
+\begin{cventry}{2013 -- 2014}
+    {Technical Secondary School Wasserburg \& EAS GmbH}
+    20 weeks of internships in metalworking and electrical installation
+    during 11th grade
+\end{cventry}
+
+
+\section{Education}
+
+\begin{cventry}{2020 -- present}
+    {M.Sc. in Physics}
+    \scshape Ludwig-Maximilans-University Munich
+\end{cventry}
+
+\begin{cventry}{2017 -- 2020}
+    {B.Sc. in Physics}
+    \scshape Ludwig-Maximilans-University Munich \newentryline Final grade 1.4, 
+    Bachelor thesis: \slshape Gaussian Processes for Emission Tomography at 
+    ASDEX Upgrade \href{https://gitlab.mpcdf.mpg.de/komo/bachelorarbeit}{\normalfont\faLink}
+\end{cventry}
+
+\begin{cventry}{2015 -- 2016}
+    {Abitur}
+    \scshape  Technical Secondary School Munich East
+\end{cventry}
+
+\begin{cventry}{2013 -- 2015}
+    {Advanced Technical College Certificate}
+    \scshape Technical Secondary School Wasserburg
+\end{cventry}
+
+
+\section{Skills}
+
+\begin{cventrynoheading}{Languages}
+    German (native), English (fluent), French (beginner)
+\end{cventrynoheading}
+
+\begin{cventrynoheading}{Programming}
+    Python including the SciPy stack, Java, Android app development 
+    in Java and Kotlin, basic C/C++ knowledge
+\end{cventrynoheading}
+
+\begin{cventrynoheading}{Other technical skills}
+    Git version control, \LaTeX and Markdown, advanced Linux/Unix knowledge, 
+    basic electronic projects with Arduino/RaspberryPi, FDM 3D printing
+\end{cventrynoheading}
+
+
+\section{Projects}
+
+\begin{cventry}{2019}
+    {Simple Budget \href{https://github.com/korbi98/Simple-Budget}{\normalfont\faGithub}}
+    Android app written in Kotlin for managing expenses. It has an intuitive 
+    user interface, custom expense categories and can track budget limits 
+    for individual categories.
+\end{cventry}
+
+\begin{cventry}{2018}
+    {TORPA \href{https://www.researchgate.net/project/TORPA-Toolbox-for-Optimal-Railway-Propulsion-Architectures}{\normalfont\faLink}}
+    {\scshape Toolbox for Optimal Railway Propulsion Architectures}
+    Contributed to the project by developing a train simulation 
+    in Matlab/Simulink that can estimate the energy consumption of 
+    different propulsion architectures on given train routes.
+\end{cventry}
+
+\begin{cventry}{2018}
+    {Simple ToDoList \href{https://github.com/korbi98/Simple-ToDoList}{\normalfont\faGithub}}
+    Simple ToDo-list app for Android written in Java
+\end{cventry}
+
+\begin{cventry}{2018}
+    {Simple Sudoku \href{https://github.com/korbi98/Simple-Sudoku}{\normalfont\faGithub}}
+    Sudoku game for Android written in Java
+\end{cventry}
+
+
+\section{Volunteer Work}
+
+\begin{cventry}{2011 -- present}{Voluntary Fire Brigade}
+    Active member of local voluntary fire brigade, \newentryline 
+    Since 2018 treasurer of the local fire brigade
+\end{cventry}
+
+\begin{cventrynoheading}{2020}
+    Candidacy for municipal council of Moosach
+\end{cventrynoheading}
+
+
+\section{Other}
+
+\begin{cventry}{2018 -- present} {Deutschlandstipendium scholarship}
+    Since April 2018 I am part of the Deutschlandstipendium, a scholarship 
+    funded partially by the German government and private sponsors for 
+    committed and high-achieving students in Germany.
+\end{cventry}
+
+\begin{cventry}{2016 -- 2017}{Work and Travel in New Zealand}
+    Besides traveling I did different farm work and improved my english skills.
+\end{cventry}
+
+
+\end{document}
+
