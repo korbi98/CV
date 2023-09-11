@@ -1,10 +1,10 @@
-\documentclass[a4paper, ]{article}
+\documentclass[a4paper, 10pt]{article}
 
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{titling}
 \usepackage{hyperref}
 \usepackage{titlesec}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 \titleformat{\section}
 {\Large\bfseries}
@@ -59,18 +59,30 @@
 \setlength{\tabcolsep}{0.1em}
 \small
 \begin{tabular}{p{1em}p{0.4\linewidth}cp{0.5\linewidth}}
-    \faEnvelopeO&: \href{mailto:me@example.com}{\nolinkurl{korbi@korbinian-moser.de}} & 
-    \faGithub&: \href{https://github.com/korbi98}{\nolinkurl{github.com/korbi98}} \vspace{0.25cm}\\  
-    \faGlobe&: \url{https://korbinian-moser.de} & 
-    \(\mathrm{R^G}\)&: \href{https://www.researchgate.net/profile/Korbinian_Moser}{\nolinkurl{researchgate.net/profile/Korbinian_Moser}}
+    \faIcon{envelope}&: \href{mailto:me@example.com}{\nolinkurl{korbi@korbinian-moser.de}} & 
+    \faIcon{globe}&: \href{https://korbinian-moser.de}
+        {\nolinkurl{www.korbinian-moser.de}} \vspace{0.2cm}\\  
+    \faIcon{linkedin}&: \href{https://www.linkedin.com/in/korbinianm/}
+        {\nolinkurl{linkedin.com/in/korbinianm/}} & 
+    \(\mathrm{R^G}\)&: \href{https://www.researchgate.net/profile/Korbinian_Moser}
+        {\nolinkurl{researchgate.net/profile/Korbinian_Moser}} \vspace{0.2cm}\\
+    \faGithub&: \href{https://github.com/korbi98}{\nolinkurl{github.com/korbi98}}
 \end{tabular}
 \end{center}
 \noindent
-Currently pursuing a Masters degree in physics at Ludwig-Maximilans-University
-Munich. My main interests lie within applied research, especially nuclear fusion, 
-plasma physics, computational physics and solid state physics.
+Graduate in phyics from Ludwig-Maximilans-University in Munich. 
+My main interests lie within applied research, especially machine learning, 
+plasma physics, nuclear fusion, computational physics and solid state physics
+and computer science in general.
 
 \section{Experience}
+
+\begin{cventry}{2022 -- 2023}
+    {Sinnesfreunde GmbH - Catering}
+    Experience with large international trade fairs such as IAA, bauma, Electronica, 
+    MWC Barcelona and Paris Airshow
+\end{cventry}
+
 \begin{cventry}{09/2021 -- 01/2022}
     {Swiss Plasma Center EPFL}
     Research project regarding data analysis of AXUV measurements of the RADCAM 
@@ -90,7 +102,7 @@ plasma physics, computational physics and solid state physics.
     Working student, working on train simulation in Matlab/Simulink within the 
     TORPA project for estimating efficiency of different propulsion architectures 
     \href{https://www.researchgate.net/project/TORPA-Toolbox-for-Optimal-Railway-Propulsion-Architectures}
-    {\faExternalLink} 
+    {\footnotesize\faIcon{link}} 
 \end{cventry}
 
 \begin{cventry}{2013 -- 2014}
@@ -102,9 +114,12 @@ plasma physics, computational physics and solid state physics.
 
 \section{Education}
 
-\begin{cventry}{2020 -- present}
+\begin{cventry}{2020 -- 2023}
     {M.Sc. in Physics}
     \scshape Ludwig-Maximilans-University Munich
+    \newentryline Master's thesis: \slshape Transport Modeling with Experimental Data and
+    Machine Learning at ASDEX Upgrade 
+    \href{https://gitlab.mpcdf.mpg.de/komo/master-thesis}{\footnotesize\faIcon{link}}
 \end{cventry}
 
 \begin{cventry}{09/2021 -- 02/2022}
@@ -114,19 +129,9 @@ plasma physics, computational physics and solid state physics.
 
 \begin{cventry}{2017 -- 2020}
     {B.Sc. in Physics}
-    \scshape Ludwig-Maximilans-University Munich \newentryline Final grade 1.4, 
+    \scshape Ludwig-Maximilans-University Munich \newentryline
     Bachelor thesis: \slshape Gaussian Processes for Emission Tomography at 
-    ASDEX Upgrade \href{https://gitlab.mpcdf.mpg.de/komo/bachelorarbeit}{\normalfont\faExternalLink}
-\end{cventry}
-
-\begin{cventry}{2015 -- 2016}
-    {Abitur}
-    \scshape  Technical Secondary School Munich East
-\end{cventry}
-
-\begin{cventry}{2013 -- 2015}
-    {Advanced Technical College Certificate}
-    \scshape Technical Secondary School Wasserburg
+    ASDEX Upgrade \href{https://gitlab.mpcdf.mpg.de/komo/bachelorarbeit}{\footnotesize\faIcon{link}}
 \end{cventry}
 
 
@@ -137,7 +142,7 @@ plasma physics, computational physics and solid state physics.
 \end{cventrynoheading}
 
 \begin{cventrynoheading}{Programming}
-    Python including the SciPy stack, Java, Android app development 
+    Python including the SciPy stack and Pytorch, Java, Android app development 
     in Java and Kotlin, basic C/C++ knowledge, Matlab and Simulink
 \end{cventrynoheading}
 
@@ -149,8 +154,8 @@ plasma physics, computational physics and solid state physics.
 
 \section{Research \& Projects}
 
-\begin{cventry}{2022}{Fusion Science and Technology 
-    \href{https://doi.org/10.1080/15361055.2022.2072659}{\normalfont\faExternalLink}}
+\begin{cventry}{2022}{Publication in Fusion Science and Technology 
+    \href{https://doi.org/10.1080/15361055.2022.2072659}{\footnotesize\faIcon{link}}}
     {\scshape Gaussian Process Tomography at ASDEX Upgrade with 
     Magnetic Equilibrium Information and Nonstationary Kernels}
 \end{cventry}
@@ -163,7 +168,9 @@ plasma physics, computational physics and solid state physics.
 \end{cventry}
 
 \begin{cventry}{2018}
-    {TORPA \href{https://www.researchgate.net/project/TORPA-Toolbox-for-Optimal-Railway-Propulsion-Architectures}{\normalfont\faExternalLink}}
+    {TORPA 
+    \href{https://www.researchgate.net/project/TORPA-Toolbox-for-Optimal-Railway-Propulsion-Architectures}
+    {\footnotesize\faIcon{link}}}
     {\scshape Toolbox for Optimal Railway Propulsion Architectures}
     Contributed to the project by developing a train simulation 
     in Matlab/Simulink that can estimate the energy consumption of 
@@ -171,15 +178,10 @@ plasma physics, computational physics and solid state physics.
 \end{cventry}
 
 \begin{cventry}{2018}
-    {Simple Sudoku \href{https://github.com/korbi98/Simple-Sudoku}{\normalfont\faGithub}}
-    Sudoku game for Android written in Java
+    {Simple Sudoku \href{https://github.com/korbi98/Simple-Sudoku}{\normalfont\faGithub} 
+    \& Simple ToDoList \href{https://github.com/korbi98/Simple-ToDoList}{\normalfont\faGithub}}
+    Sudoku game and ToDoList app for Android written in Java
 \end{cventry}
-
-\begin{cventry}{2018}
-    {Simple ToDoList \href{https://github.com/korbi98/Simple-ToDoList}{\normalfont\faGithub}}
-    Simple ToDo-list app for Android written in Java
-\end{cventry}
-
 
 \section{Volunteer Work}
 
